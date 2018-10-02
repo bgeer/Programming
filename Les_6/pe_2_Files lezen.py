@@ -11,16 +11,12 @@ def writefile():
 def uitvoer(file):
     file = open(file, 'r')
     lines = file.readlines()
-    count = 0;
     for line in lines:
         line = line.rstrip('\n');
         value = line.split(', ');
-        count += 1;
         number = value[0]
         name = value[1]
         print(name + ' heeft kaartnummer: ' + number);
-    print(count);
-
     file.close()
 
 uitvoer('kaartnummers.txt');

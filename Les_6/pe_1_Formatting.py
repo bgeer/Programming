@@ -3,9 +3,15 @@ def convert(tc):
     return tf
 
 def table(min,max):
-    print('Celcius' + '\t'*2 + 'Fahrenheit')
+    print('{0:<}{1:>10}'.format("Fahrenheit", "Celcius"))
     for i in range(min,max+1,10):
-        print(str(i) + '\t'*3 +  str(convert(i)))
-    return '----------------'
+        fr = f=str(i)
+        ce = c=str(convert(i))
+        print('{f:>3}{c:>15}'.format(f=fr,c=ce))
+    return '--------------------'
+
 
 print(table(-30,40));
+
+
+

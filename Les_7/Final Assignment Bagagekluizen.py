@@ -49,6 +49,9 @@ def kluis_openen():
 
             print("Kluis niet gevonden");
 
+def kluis_inleveren():
+
+
 
 print(
     "1: Ik wil weten hoeveel kluizen nog vrij zijn\n" +
@@ -66,7 +69,7 @@ elif menukeuze == 2:
 elif menukeuze == 3:
     kluis_openen();
 elif menukeuze == 4:
-    print()
+    kluis_inleveren();
 else:
     print("Ongeldige menukeuze");
 
